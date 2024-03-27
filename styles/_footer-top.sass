@@ -1,0 +1,123 @@
+.footer-top 
+    font-size: 15px
+    font-weight: 400
+    background-color: #F2F8FC
+
+    &__inner 
+        padding-top: 115px
+        display: flex 
+        justify-content: space-between 
+        padding-bottom: 105px
+
+.footer-left 
+    max-width: 405px
+
+    &__title 
+        font-size: 25px
+        font-weight: 700
+
+    &__txt 
+        margin-top: 17px
+        line-height: 1.4
+
+    &__addres
+        margin-top: 40px
+        position: relative
+        padding-left: 40px
+        z-index: 1
+        &::before 
+            position: absolute 
+            content:""
+            width: 15px 
+            height: 15px 
+            background-image: url(../images/footer-adrres-icon.svg)
+            left: 0px 
+            top: -1px
+
+    &__link 
+        display: block
+
+    &__gmail
+        margin-top: 21px
+        position: relative
+        z-index: 1
+        &::before 
+            position: absolute 
+            content:"" 
+            height: 1px 
+            width: 235px
+            background-color:#22262A 
+            left: 0px 
+            bottom: -5px
+
+    &__phone 
+        margin-top: 12px
+
+    &__social 
+        margin-top: 30px
+
+.footer-left__social-link 
+    & + & 
+        margin-left: 10px
+    img 
+        object-fit: cover 
+        width: 20px 
+        height: 20px
+
+.footer-right 
+    max-width: 530px
+
+    &__title 
+        font-size: 25px
+        font-weight: 700
+
+    &__gmail 
+        margin-top: 25px
+        width: 100%
+        background-color: #fff
+        display: flex
+        justify-content: space-between
+        border-radius: 5px
+        overflow: hidden
+        padding: 0px 25px
+
+    &__input 
+        height: 45px
+        border: none
+        font-size: 15px
+        font-weight: 400
+        outline: none
+        width: 450px
+        &:placeholder 
+            color:#22262A 
+            font-size: 15px
+            font-weight: 400
+
+    &__btn 
+        font-size: 15px
+        font-weight: 600
+        border: none
+        background-color: #fff
+        height: 45px
+        cursor: pointer
+
+    &__nav 
+        margin-top: 70px
+        display: flex 
+        justify-content: space-between
+
+
+.footer-section
+    &__title 
+        font-size: 20px
+        font-weight: 600
+    &__list
+         margin-top: 27px
+    &__item 
+        font-size: 15px
+        font-weight: 400
+        transition: 0.2s all ease
+        &:hover 
+            opacity: 0.6
+        & + & 
+            margin-top: 20px
